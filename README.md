@@ -18,6 +18,10 @@
 
 ### Licensing
 
+{{%notice warning%}}
+**Warning:** Bootstrapping the configuration and license for FortiManager instances is not currently supported in this deployment. You will need to manually configure and license the instances after deployment.
+{{%/notice%}}
+
 There are three options for licensing the FortiManager VMs:
 
 "flex" (default) - Set license_type to "flex" and add two unused FortiFlex tokens to the "flex_tokens" variable. Ensure you are using the BYOL FortiManager image. For Example:
