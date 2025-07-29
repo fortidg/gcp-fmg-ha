@@ -18,9 +18,9 @@
 
 ### Licensing
 
-[!WARNING]
-**Warning:** Bootstrapping the configuration and license for FortiManager instances is not currently supported in this deployment. You will need to manually configure and license the instances after deployment.
-
+<div style="color: red; background-color: #ffe6e6; padding: 10px; border-left: 4px solid red;">
+<strong>Warning:</strong> Bootstrapping the configuration and license for FortiManager instances is not currently supported in this deployment. You will need to manually configure and license the instances after deployment.
+</div>
 
 There are three options for licensing the FortiManager VMs:
 
