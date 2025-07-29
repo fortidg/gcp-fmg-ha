@@ -1,0 +1,25 @@
+project = "your-gcp-project-id"
+region  = "us-central1"
+zone    = "us-central1-a"
+zone2   = "us-central1-b"
+
+# Prefixed to all resources
+prefix = "flex-fmg-ha2"
+
+# FortiGate image and instance type
+
+# 7.4.7 BYOL is projects/fortigcp-project-001/global/images/fortinet-fmg-747-20250529-001-w-license
+# 7.6.3 BYOL is projects/fortigcp-project-001/global/images/fortinet-fmg-763-20250423-001-w-license
+fortimanager_vm_image     = "projects/fortigcp-project-001/global/images/fortinet-fmg-763-20250423-001-w-license"
+fortimanager_machine_type = "n2-standard-4"
+
+fortimanager_license_files = {
+  fmg1_instance = { name = null }
+  fmg2_instance = { name = null }
+}
+
+license_type = "flex" # can be byol, flex, or payg, make sure the license is correct for the sku
+flex_tokens  = ["YOUR_FLEX_TOKEN_1", "YOUR_FLEX_TOKEN_2"]
+
+fmg_password = "YOUR_SECURE_PASSWORD"
+fmg_username = "your-username"
